@@ -5,7 +5,8 @@
   "scripts": {
     "start": "node server.js",
     "dev": "node --watch server.js",
-    "setup-db": "node setupDatabase.js"
+    "setup-db": "node setupDatabase.js",
+    "build": "node -e \"console.log('No build step required for backend')\""
   },
   "devDependencies": {
     "@types/bun": "latest"
