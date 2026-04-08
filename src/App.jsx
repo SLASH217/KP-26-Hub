@@ -1,4 +1,4 @@
-// src/App.js
+// src/App.jsx
 import './App.css';
 import ScrollToTop from "./features/ScrollToTop";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -28,6 +28,7 @@ import WashingMachine from './Pages/info_pages/washing_m';
 import Hostel from './Pages/hostel_pages/hostel';
 import Update from './Pages/update_pages/update';
 import Complaints from './Pages/info_pages/complaints';
+import ComplaintsAdmin from './Pages/admin_pages/complaints_admin';
 
 function App() {
   return (
@@ -70,6 +71,9 @@ function App() {
           <Route element={<UpdateLayout />}>
             <Route path='/update' element={<Update />} />
           </Route>
+
+          {/* LOCAL ADMIN ROUTE */}
+          <Route path='/admin-complaints' element={<ComplaintsAdmin />} />
         </Routes>
       </Router>
     </main>

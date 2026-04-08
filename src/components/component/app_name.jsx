@@ -60,6 +60,9 @@ function AppName() {
             <Link to="/food-info" className="dropdown_link animate-item no-highlight">
               <PiBowlFoodBold /> &nbsp;&nbsp;Food Info
             </Link>
+            <Link to="/complaints" className="dropdown_link animate-item no-highlight">
+              <AiOutlineMenu /> &nbsp;&nbsp;Complaints
+            </Link>
           </div>
         </div>
       )}
